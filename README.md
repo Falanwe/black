@@ -1,5 +1,7 @@
 Modified fork from black to accomodate a specific (undisclosed ;) ) team coding standards.
+
 Default line length is changed to 140 characters
+
 Indenting is done as tabs instead of spaces.
 
 To install this version of black, clone the repo and run
