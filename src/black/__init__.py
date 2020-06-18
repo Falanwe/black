@@ -64,7 +64,7 @@ from _black_version import version as __version__
 if TYPE_CHECKING:
     import colorama  # noqa: F401
 
-DEFAULT_LINE_LENGTH = 88
+DEFAULT_LINE_LENGTH = 140
 DEFAULT_EXCLUDES = r"/(\.eggs|\.git|\.hg|\.mypy_cache|\.nox|\.tox|\.venv|\.svn|_build|buck-out|build|dist)/"  # noqa: B950
 DEFAULT_INCLUDES = r"\.pyi?$"
 CACHE_DIR = Path(user_cache_dir("black", version=__version__))
@@ -1776,7 +1776,7 @@ class Line:
         if not self:
             return "\n"
 
-        indent = "    " * self.depth
+        indent = "\t" * self.depth
         leaves = iter(self.leaves)
         first = next(leaves)
         res = f"{first.prefix}{indent}{first.value}"

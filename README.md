@@ -1,3 +1,12 @@
+Modified fork from black to accomodate a specific (undisclosed ;) ) team coding standards.
+Default line length is changed to 140 characters
+Indenting is done as tabs instead of spaces.
+
+To install this version of black, clone the repo and run
+```sh
+pip install <cloned folder>
+```
+
 ![Black Logo](https://raw.githubusercontent.com/psf/black/master/docs/_static/logo2-readme.png)
 
 <h2 align="center">The Uncompromising Code Formatter</h2>
